@@ -17,7 +17,7 @@ const Main = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: normal;
-  align-items: unset;
+  align-items: center;
 `
 
 const Title = styled.h1`
@@ -27,15 +27,6 @@ const Title = styled.h1`
   text-align: center;
   text-decoration: none;
 
-  a {
-    color: ${({ theme }) => theme.colors.secondary};
-    text-decoration: none;
-    &:hover,
-    :focus,
-    :active {
-      text-decoration: underline;
-    }
-  }
 `
 
 const Description = styled.p`
@@ -43,7 +34,7 @@ const Description = styled.p`
   line-height: 1.5;
   font-size: 1.5rem;
 `
-const Button = styled.button`
+const ClaimButton = styled.button`
   background: #c9c904;
   border-radius: 999px;
   box-sizing: border-box;
@@ -140,4 +131,4 @@ const StyledPack = styled.div`
     }
   `
 
-export { Container, Main, Title, Description, StyledPack, Button }
+export { Container, Main, Title, Description, StyledPack, ClaimButton }
