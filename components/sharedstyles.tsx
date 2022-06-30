@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { device } from '../pages/_app'
 
 const Container = styled.div`
   padding: 0 0.5rem;
@@ -8,13 +9,14 @@ const Container = styled.div`
   align-items: center;
   height: 100vh;
   min-height: 100vh;
+  background-color: #030a1f;
 `
 const Main = styled.main`
   padding: 5rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: normal;
   align-items: center;
 `
 
@@ -47,8 +49,84 @@ const CodeTag = styled.code`
   margin: 0 0.75rem;
   padding: 0.75rem;
   font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
 `
+const StyledPack = styled.div`
+  border-color: ${({ theme }) => theme.colors.primary};
+    border-bottom-style: solid;
+    margin: 50ex;
+    text-align: justify;  
+    margin-left: 0px;
+    margin-right: 50ex;
 
-export { Container, Main, Title, Description, CodeTag }
+    img {
+        float: left;
+        display: contents;
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1 {
+        color: ${({ theme }) => theme.colors.primary};
+        font-size: 22px;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+
+    h2{
+        color: ${({ theme }) => theme.colors.primary};
+        font-size: 20px;
+        margin-top: auto;
+        margin-bottom: auto;
+        
+    }
+
+    h3{
+        color: ${({ theme }) => theme.colors.primary};
+        font-size: 18px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    @media ${device.laptop} {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: auto;
+        padding-right: auto;
+        margin-top: auto;
+        min-width: auto;
+        img {
+        float: left;
+        display: block;
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        h3 {
+        margin-bottom: auto;
+        }
+    }
+
+    @media ${device.desktop} {
+        max-width: px;
+        margin-left: px;
+        margin-right: px;
+        padding-bottom: em;
+        padding-right: em;
+        margin-top: em;
+        min-width: cm;
+        img {
+        float: ;
+        display: ;
+        width: px;
+        margin-left: ;
+        margin-right: em;
+        }
+        h3 {
+        margin-bottom: em;
+        }
+    };
+  `
+
+export { Container, Main, Title, Description, CodeTag, StyledPack }
