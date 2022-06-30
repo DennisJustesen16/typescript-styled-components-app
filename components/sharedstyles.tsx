@@ -17,7 +17,7 @@ const Main = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: normal;
-  align-items: center;
+  align-items: unset;
 `
 
 const Title = styled.h1`
@@ -42,6 +42,24 @@ const Description = styled.p`
   text-align: center;
   line-height: 1.5;
   font-size: 1.5rem;
+`
+const Button = styled.button`
+  background: #c9c904;
+  border-radius: 999px;
+  box-sizing: border-box;
+  color: #1a1903;
+  cursor: pointer;
+  font-family: PixelarRegularW01-Regular;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  margin: 0.25em;
 `
 
 const StyledPack = styled.div`
@@ -119,7 +137,7 @@ const StyledPack = styled.div`
         h3 {
         margin-bottom: auto;
         }
-    };
+    }
   `
 
-export { Container, Main, Title, Description, StyledPack }
+export { Container, Main, Title, Description, StyledPack, Button }

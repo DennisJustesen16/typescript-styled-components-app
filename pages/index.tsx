@@ -5,6 +5,7 @@ import {
   Title,
   Description,
   StyledPack,
+  Button,
 } from '../components/sharedstyles'
 
 export default function Home() {
@@ -42,10 +43,13 @@ export default function Home() {
         </StyledPack>
 
 
-        
+        <Button>
+          Claim All
+        </Button>
 
        
       </Main>
+      
     </Container>
   )
 }
