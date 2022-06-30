@@ -4,10 +4,8 @@ import {
   Main,
   Title,
   Description,
-  CodeTag,
   StyledPack,
 } from '../components/sharedstyles'
-import Cards from '../components/cards'
 
 export default function Home() {
   return (
@@ -25,10 +23,22 @@ export default function Home() {
         </Description>
 
         <StyledPack>
-          <img src="../images/starter.png"/>
+          <img src='images/starter.png'/>
           <h1>You recieved 4 new packs</h1>
-          <h2>Basic beast starter pack</h2>
-          <h3>USD 40$</h3>
+          <h2>Basic Beast Starter Pack</h2>
+          <h3>USD $40.00</h3>
+        </StyledPack>
+        <StyledPack>
+          <img src='images/cursed.png'/>
+          <h1>You recieved 2 new packs</h1>
+          <h2>Cursed Black pack</h2>
+          <h3>USD $600.00</h3>
+        </StyledPack>
+        <StyledPack>
+          <img src='images/shiny.png'/>
+          <h1>You recieved 1 new pack</h1>
+          <h2>Shiny Gold</h2>
+          <h3>USD $999</h3>
         </StyledPack>
 
 

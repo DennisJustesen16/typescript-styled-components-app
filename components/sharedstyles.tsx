@@ -43,47 +43,40 @@ const Description = styled.p`
   line-height: 1.5;
   font-size: 1.5rem;
 `
-const CodeTag = styled.code`
-  background: #fafafa;
-  border-radius: 5px;
-  margin: 0 0.75rem;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-`
+
 const StyledPack = styled.div`
   border-color: ${({ theme }) => theme.colors.primary};
     border-bottom-style: solid;
-    margin: 50ex;
-    text-align: justify;  
-    margin-left: 0px;
-    margin-right: 50ex;
+    margin: auto;
+    text-align: auto;  
+    margin-left: auto;
+    margin-right: auto;
 
     img {
         float: left;
-        display: contents;
-        width: 100px;
+        display: block;
+        width: 60px;
         margin-left: auto;
-        margin-right: auto;
+        margin-right: 1em;
     }
 
     h1 {
         color: ${({ theme }) => theme.colors.primary};
-        font-size: 22px;
-        margin-bottom: auto;
+        font-size: 18px;
         margin-top: auto;
+        margin-bottom: auto;
     }
 
     h2{
         color: ${({ theme }) => theme.colors.primary};
-        font-size: 20px;
+        font-size: 16px;
         margin-top: auto;
-        margin-bottom: auto;
-        
+        margin-bottom: auto; 
     }
 
     h3{
         color: ${({ theme }) => theme.colors.primary};
-        font-size: 18px;
+        font-size: 14px;
         margin-top: auto;
         margin-bottom: auto;
     }
@@ -99,9 +92,9 @@ const StyledPack = styled.div`
         img {
         float: left;
         display: block;
-        width: 100px;
+        width: 60px;
         margin-left: auto;
-        margin-right: auto;
+        margin-right: 1em;
         }
         h3 {
         margin-bottom: auto;
@@ -109,24 +102,24 @@ const StyledPack = styled.div`
     }
 
     @media ${device.desktop} {
-        max-width: px;
-        margin-left: px;
-        margin-right: px;
-        padding-bottom: em;
-        padding-right: em;
-        margin-top: em;
-        min-width: cm;
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: auto;
+        padding-right: auto;
+        margin-top: auto;
+        min-width: auto;
         img {
-        float: ;
-        display: ;
-        width: px;
-        margin-left: ;
-        margin-right: em;
+        float: left;
+        display: block;
+        width: 60px;
+        margin-left: auto;
+        margin-right: 1em;
         }
         h3 {
-        margin-bottom: em;
+        margin-bottom: auto;
         }
     };
   `
 
-export { Container, Main, Title, Description, CodeTag, StyledPack }
+export { Container, Main, Title, Description, StyledPack }

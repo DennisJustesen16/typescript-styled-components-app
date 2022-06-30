@@ -22,31 +22,4 @@ export default class MyDocument extends Document {
       sheet.seal()
     }
   }
-  //---------------------------------------------------//
-  render() {
-    return (
-        <Html lang="en">
-            <Head>
-                <link
-                  rel="preload"
-                  href="/fonts/Pixelar-Regular-W01-Regular.ttf"
-                  as="font"
-                  type="font/ttf"
-                  crossOrigin=""
-                />
-                <link
-                  rel="preload"
-                  href="/fonts/Pixelar-Regular-W01-Regular.ttf"
-                  as="font"
-                  type="font/ttf"
-                  crossOrigin=""
-                />
-            </Head>
-            <body>
-                <Main />
-                <NextScript />
-            </body>
-        </Html>
-    );
-}
 }
