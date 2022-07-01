@@ -15,7 +15,7 @@ export default function Home() {
       <Head>
         <title>My Inbox</title>
       </Head>
-       <StyledButton>HOME</StyledButton>
+        <StyledButton>HOME</StyledButton>
         <StyledButton>STORE</StyledButton>
         <StyledButton>MARKETPLACE</StyledButton>
         <StyledButton>DEXICON</StyledButton>

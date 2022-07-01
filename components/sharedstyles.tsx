@@ -44,8 +44,8 @@ const StyledButton = styled.button`
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
-  opacity: ;
-  outline: 0 ;
+  opacity: 1;
+  outline: 0 solid transparent;
   padding: 8px 18px;
   width: fit-content;
   word-break: break-word;
