@@ -3,7 +3,7 @@ import { device } from '../pages/_app'
 
 const Container = styled.div`
   padding: 0 0.5rem;
-  display: flex;
+  display: block;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@ const Main = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: normal;
-  align-items: center;
+  align-items: stretch;
 `
 
 const Title = styled.h1`
@@ -33,6 +33,24 @@ const Description = styled.p`
   text-align: center;
   line-height: 1.5;
   font-size: 1.5rem;
+`
+const StyledButton = styled.button`
+  background: none;
+  border-radius: 999px;
+  box-sizing: border-box;
+  color: #b1a80c;
+  cursor: pointer;
+  font-family: PixelarRegularW01-Regular;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: ;
+  outline: 0 ;
+  padding: 8px 18px;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  margin: 1.25em;
 `
 const ClaimButton = styled.button`
   background: #c9c904;
@@ -50,16 +68,17 @@ const ClaimButton = styled.button`
   width: fit-content;
   word-break: break-word;
   border: 0;
-  margin: 0.25em;
+  margin: 1.25em;
 `
 
 const StyledPack = styled.div`
   border-color: ${({ theme }) => theme.colors.primary};
     border-bottom-style: solid;
-    margin: auto;
-    text-align: auto;  
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1em;
+    text-align: start;  
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 500px;
 
     img {
         float: left;
@@ -131,4 +150,4 @@ const StyledPack = styled.div`
     }
   `
 
-export { Container, Main, Title, Description, StyledPack, ClaimButton }
+export { Container, Main, Title, Description, StyledPack, ClaimButton, StyledButton }

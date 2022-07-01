@@ -6,6 +6,7 @@ import {
   Description,
   StyledPack,
   ClaimButton,
+  StyledButton,
 } from '../components/sharedstyles'
 
 export default function Home() {
@@ -14,7 +15,12 @@ export default function Home() {
       <Head>
         <title>My Inbox</title>
       </Head>
+       <StyledButton>HOME</StyledButton>
+        <StyledButton>STORE</StyledButton>
+        <StyledButton>MARKETPLACE</StyledButton>
+        <StyledButton>DEXICON</StyledButton>
       <Main>
+       
         <Title>
           My Inbox
         </Title>
