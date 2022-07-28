@@ -15,12 +15,25 @@ export default function Home() {
       <Head>
         <title>My Inbox</title>
       </Head>
-        <StyledButton>HOME</StyledButton>
-        <StyledButton>STORE</StyledButton>
-        <StyledButton>MARKETPLACE</StyledButton>
-        <StyledButton>DEXICON</StyledButton>
+        
       <Main>
-       
+
+      <StyledButton>
+          HOME
+        </StyledButton>
+        
+        <StyledButton>
+          STORE
+        </StyledButton>
+
+        <StyledButton>
+          MARKETPLACE
+        </StyledButton>
+
+        <StyledButton>
+          DEXICON
+        </StyledButton>
+
         <Title>
           My Inbox
         </Title>
@@ -35,12 +48,14 @@ export default function Home() {
           <h2>Basic Beast Starter Pack</h2>
           <h3>USD $40.00</h3>
         </StyledPack>
+
         <StyledPack>
           <img src='images/cursed.png'/>
           <h1>You recieved 2 new packs</h1>
           <h2>Cursed Black pack</h2>
           <h3>USD $600.00</h3>
         </StyledPack>
+
         <StyledPack>
           <img src='images/shiny.png'/>
           <h1>You recieved 1 new pack</h1>

@@ -7,17 +7,17 @@ const Container = styled.div`
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: auto;
   min-height: 100vh;
   background-color: #030a1f;
 `
 const Main = styled.main`
-  padding: 5rem 0;
+  padding: 5rem 1;
   flex: 1;
-  display: flex;
+  display: block;
   flex-direction: column;
-  justify-content: normal;
-  align-items: stretch;
+  justify-content: center;
+  align-items: center;
 `
 
 const Title = styled.h1`
@@ -53,8 +53,8 @@ const StyledButton = styled.button`
   margin: 1.25em;
 `
 const ClaimButton = styled.button`
-  background: #c9c904;
-  border-radius: 999px;
+  background: #f1f107;
+  border-radius: 2px;
   box-sizing: border-box;
   color: #1a1903;
   cursor: pointer;
@@ -74,18 +74,19 @@ const ClaimButton = styled.button`
 const StyledPack = styled.div`
   border-color: ${({ theme }) => theme.colors.primary};
     border-bottom-style: solid;
-    margin: 1em;
+    border-bottom-color: #4d4c4c;
+    margin: 2em;
     text-align: start;  
-    margin-left: 100px;
-    margin-right: 100px;
-    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    width: stretch;
 
     img {
         float: left;
         display: block;
         width: 60px;
         margin-left: auto;
-        margin-right: 1em;
+        margin-right: 2em;
     }
 
     h1 {
@@ -106,11 +107,11 @@ const StyledPack = styled.div`
         color: ${({ theme }) => theme.colors.primary};
         font-size: 14px;
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 2.5em;
     }
 
     @media ${device.laptop} {
-        max-width: 800px;
+        max-width: auto;
         margin-left: auto;
         margin-right: auto;
         padding-bottom: auto;
@@ -125,12 +126,12 @@ const StyledPack = styled.div`
         margin-right: 1em;
         }
         h3 {
-        margin-bottom: auto;
+        margin-bottom: 2.5em;
         }
     }
 
     @media ${device.desktop} {
-        max-width: 1400px;
+        max-width: auto;
         margin-left: auto;
         margin-right: auto;
         padding-bottom: auto;
@@ -145,7 +146,7 @@ const StyledPack = styled.div`
         margin-right: 1em;
         }
         h3 {
-        margin-bottom: auto;
+        margin-bottom: 2.5em;
         }
     }
   `
