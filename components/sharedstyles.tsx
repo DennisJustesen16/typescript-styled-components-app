@@ -9,7 +9,7 @@ const Container = styled.div`
   align-items: center;
   height: auto;
   min-height: 100vh;
-  background-color: #030a1f;
+  background-color: #111823;
 `
 const Main = styled.main`
   padding: 5rem 1;
@@ -74,7 +74,7 @@ const ClaimButton = styled.button`
 const StyledPack = styled.div`
   border-color: ${({ theme }) => theme.colors.primary};
     border-bottom-style: solid;
-    border-bottom-color: #4d4c4c;
+    border-bottom-color: #1f2531;
     margin: 2em;
     text-align: start;  
     margin-left: auto;
